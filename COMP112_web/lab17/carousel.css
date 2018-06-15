@@ -1,0 +1,22 @@
+/*Meiqi Sun 2016.05.04*/
+*{
+	padding: 0;
+	margin: 0;
+}
+body{
+    width:1500px;
+}
+
+figure{
+	background-color:#ffffff;
+	color:#CCCCCC;
+	display: inline;
+}
+
+img{
+	vertical-align: middle;
+}
+
+
+
+

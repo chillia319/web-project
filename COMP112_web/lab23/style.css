@@ -1,0 +1,125 @@
+/*Primary style sheet for HTML5 and CSS mini site*/
+/*Nick Meek, Dec 2012*/
+
+/* Generic Stuff */ 
+
+@font-face {
+	font-family: Pirulen;
+	src: url(./Pirulen/pirulen.eot), url(./Pirulen/pirulen.ttf)format("truetype");
+}
+@font-face {
+	font-family: Quicksand;
+	src: url(./Quicksand/Quicksand.eot), url(./Quicksand/Quicksand_Book.otf)format("truetype");
+}
+
+
+html{
+	text-align:justify;
+	min-width: 750px;
+	font-size:small;
+	font-family:Quicksand,serif;
+	background-color: #e7eff5;
+	color: #01355a;
+	}
+
+body{
+	width:900px;
+	margin: 0 auto;
+	padding:  10px 20px;
+}
+
+h1,h2{font-family:pirulen,serif;
+border-bottom: 1px solid #49a9ed;
+
+}
+
+h2{
+
+}
+
+header{
+	text-decoration:none;
+	border: 0;
+	padding-top:10px;
+}
+#header{
+	background: linear-gradient(#a7d2f2, #e7eff5);
+	border-radius: 10px;
+	text-align: center;}
+/* Navigation */
+
+Nav{
+	list-style-type:none;
+	
+	padding: 5px 0 50px 0;
+}
+
+Nav ul{
+	color: white;
+	background-color: inherit;
+
+}
+
+Nav li{
+	color: #49a9ed;
+	background-color: inherit;
+	display:inline;
+	padding: 5px 20px;
+	margin: 5px 20px 0 0;
+	border-radius: 10px;
+	background: linear-gradient(#e7eff5, #a7d2f2);
+	box-shadow: 6px 6px 5px #888888;
+}
+
+Nav a{
+	
+}
+
+
+/* Main Content */
+article{
+	width:600px;
+}
+
+aside{
+	float:right;
+	width:275px;
+}
+
+aside .rightColItem{
+	padding:5px;
+	border: 1px solid #49a9ed;
+	margin-bottom:10px;
+	border-radius: 10px;
+}
+
+aside .rightColHeader{
+	text-align:center;
+	padding:0;
+	margin-top:30px;	
+	position:relative;
+	top:-35px;
+}
+
+aside .rightColHeader h2{
+	padding-top:5px;
+	font-size:medium;
+	border-bottom: 0px solid #330033;
+}
+
+aside .rightColItem dl dt{
+	font-weight:bold;
+}
+
+blockquote{
+	margin:0 auto;
+	width:80%;
+	border: 1px dotted black;
+	padding: 0 10px;
+}
+
+blockquote cite{
+	display:block;
+	text-align:right;
+	font-style:italic;
+}

@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>simple form</title>
+		<style>
+		fieldset {border:0px;}
+		</style>
+	</head>
+	<body>
+		<form action="processForm.php" method="get">
+			<fieldset>
+				<label>Enter your name:</label>
+				<input type="text" id="name" name="name">
+			</fieldset>
+			<fieldset>
+				<label>What is your favorite out of the following.</label>
+				<select name="fave">
+					<option value="chocolate">chocolate</option>
+					<option value="pizza">Pizza</option>
+					<option value="icecream">Ice cream</option>
+				</select>
+			</fieldset>
+			<fieldset>
+				<label><input type="submit" id="submit" value="submit"></label>
+				<label><input type="reset" id="reset" value="reset"></label>
+			</fieldset>
+		</form>
+	</body>
+</html>

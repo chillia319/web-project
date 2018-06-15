@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>EmailForm</title>
+	</head>
+	<body>
+		<form method="post" enctype="x-www-form-urlencoded" action="http://web112.otago.ac.nz/112bin/112formslab.cgi">
+			<p>You need to provide email address in below.</p>
+			<p>Email Address: <input type="text" name="sender" size="12" maxlength="255" value=""></p>
+			<p>First Name: <input type="text" name="firstname" size="12" maxlength="255" value=""></p>
+			<p>Surname: <input type="text" name="surname" size="12" maxlength="255" value=""></p>
+			<p>Address: <input type="text" name="address" size="12" maxlength="255" value=""></p>
+			<p>Phone Number: <input type="text" name="phone_number" size="12" maxlength="255" value=""></p>
+			<div><input type="hidden" name="recipient" value="sunme114@student.otago.ac.nz"></div>
+			<div><input type="hidden" name="subject" value="Meiqi of resulting email"></div>
+			<div><input type="hidden" name="followup-page" value="http://www.cs.otago.ac.nz/comp112/followup.html"></div>
+			<div>Sender:<input type="text" name="sender"></div>
+			<p><input type='submit' name='send' value='send'></p>
+		</form>
+	</body>
+</html>

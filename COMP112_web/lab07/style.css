@@ -1,0 +1,18 @@
+html{
+background-color: #eee;
+}
+header{
+margin-top: 25px;
+}
+h1{
+color: red;
+text-align:center;
+background-color: #eef;
+padding:25px;
+margin:25px;
+border:5px dashed black;
+}
+p{
+    margin-top: 30px;
+    margin-bottom:30px;
+}

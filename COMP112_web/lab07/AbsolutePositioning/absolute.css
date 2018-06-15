@@ -1,0 +1,44 @@
+/* Nick Meek, COMP112 CSSII Lab. Dec 2014 */
+
+html{
+	background-color:#E6EDF7;
+	color:#07326E;
+}
+
+div{
+	width:300px;
+	height:100px;
+	border:1px solid;
+	margin: 10px 0;
+	padding-top:50px;
+	text-align:center;
+	font-size:xx-large;
+}
+
+#divOne{
+	background-color:#F0C7D0;
+	color:inherit;
+}
+
+#divTwo{
+	background-color:#C7F0D2;
+	color:inherit;
+}
+#divTwo{
+    position: absolute;
+    bottom:100px;
+    left:200px;
+}
+span{
+    position: absolute;
+    bottom: 25px;
+    left:50px;
+    color:red;
+    backgroung-color:inherit;
+}
+p{
+    position: relative;
+	width: 70%;
+	margin: 20px auto;
+
+}

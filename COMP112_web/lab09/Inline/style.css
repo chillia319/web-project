@@ -1,0 +1,10 @@
+body{
+    padding-top:30px;
+}
+div{
+	border: 1px solid black;
+	display: inline;
+	margin: 20px;
+	padding: 20px;
+}
+

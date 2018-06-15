@@ -1,0 +1,97 @@
+/*Maggie Sun, March 16. Style sheet for homepage*/
+body {
+color: white; 
+background-color: #303030;
+}
+
+h1{
+background-color: #888888;
+text-align: center;
+border-style: dotted;
+border-color: #303030;
+border-width: 15px;
+padding:10px;
+font-size: x-large;
+margin-left:auto; /* Giving the body a width and setting left and right margins to auto */margin-right:auto; /* means the body element sits in the middle of the browser window. */
+margin-top: 50px;
+width:50%;
+}
+ul.menu li{
+    float: left;
+    border-radius: 50px;
+    padding: 10px;
+    width: 150px;
+    height: 20px;
+    background-color: #888888;
+    margin:50px;
+    text-align: center;
+}ul{
+clear: left;
+}
+
+}
+h2{
+clear: left;
+border-radius: 50px;
+font-size: large;
+margin-left: 15px;
+text-indent: 20px;
+background-color: #888888;
+width: 35%;
+padding:10px;
+}
+p{
+clear: left;
+font-size: medium;
+font-family: sans-serif;
+width: 80%;
+margin-left:auto; /* Giving the body a width and setting left and right margins to auto */margin-right:auto; /* means the body element sits in the middle of the browser window. */
+}
+div.figure {
+  clear:left;
+  margin-left: auto;
+  margin-right: auto;
+  width: 12%;
+  border: 2px silver solid;
+  padding: 0px;
+}
+div.figure p {
+  text-align: center;
+  font-size: smaller;
+  text-indent: 0;
+}
+img.scaled {
+  width: 100%;
+}
+
+a:link,
+a:visited {
+color:#606060;
+text-decoration:underline;
+}
+a:hover,
+a:active {
+color:#000000;
+text-decoration:none;
+} 
+
+table {
+    margin-left:auto; /* Giving the body a width and setting left and right margins to auto */    margin-right:auto; /* means the body element sits in the middle of the browser window. */
+    width: 70%;
+    border-collapse: collapse;
+    text-align: center;
+}
+caption {
+  background-color: #888888;
+  font-size: large;
+}
+
+table, th, td {
+    border-bottom: 1px solid white;
+}
+th{
+    background-color: #888888;
+}
+tr:hover {
+    background-color: #404040;
+}

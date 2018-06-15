@@ -1,0 +1,25 @@
+/*Maggie Sun, March 16. Style sheet for lab 5*/
+html {
+color: black; 
+background-color: #f2f2ff;
+font-family: Geneva, Helvetica, sans-serif;
+}
+
+h1{
+color: purple;
+font-size: x-large;
+font-style: italic; 
+margin:auto;
+width:50%;
+}
+h2{
+font-size: large;
+text-decoration:underline;
+color: #4d4da6; 
+}
+p{
+font-size: medium;
+color: #4d4da6; 
+font-family: sans-serif;
+text-indent: 30px;
+}

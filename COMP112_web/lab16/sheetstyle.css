@@ -1,0 +1,108 @@
+/*Meiqi Sun 2016.05.04*/
+*{
+	padding: 0;
+	margin: 0;
+}
+
+html{
+	background-color: #5F5F5F;
+	color:#000000;
+	font-family:Arial,sans-serif;	
+	font-size:14px;	
+	width:620px;
+}
+fieldset{ 
+    border:1px;
+    background-color:#8C8C8C;
+    color:#000000;
+    padding-bottom:10px;
+}
+legend{ 
+    background-color:#FFFFFF;
+    color:#000000;
+   	border:1px solid black;
+	margin-top:10px;
+	margin-left:10px;
+}
+
+form{
+    background-color:#CCCCCC;
+    color:#000000;
+    float:left;
+    width: 450px;
+	padding: 20px;
+}
+
+ul{
+   list-style-type: none;
+   padding:6px;
+}
+
+li{
+	height: 1.5em;
+}
+.textInputs label{
+    float: left;
+    width: 150px;
+}
+
+.textInputs input{
+	float: left;
+	width: 230px;
+}
+
+.textInputs li{
+	clear:both;
+}
+
+.preference{
+	margin-top: 15px;
+}
+
+
+.preference li{
+    float:left;
+    width: 33%;
+}
+
+.cat li{
+    float:left;
+    width: 33%;
+}
+textarea{
+    margin-top:7px;
+    margin-left:10px;
+}
+.button{
+	margin-top: 15px;
+}
+#reset{
+	float:right;
+	margin-top: 15px;
+	}
+#submit{
+	float:right;
+	margin-top: 15px;
+}
+.figure{
+	background-color:#000000;
+	color:#CCCCCC;
+	height:520px;
+}
+
+.helper {
+    display: inline-block;
+    height: 100%;
+    vertical-align: middle;
+}
+
+img{
+	vertical-align: middle;
+}
+p{
+	clear:both;
+	margin-left:20px;
+	}
+
+
+

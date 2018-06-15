@@ -1,0 +1,30 @@
+/*Nick Meek 2010, COMP1128?
+/*Style sheet for use with php style change lab*/
+body{
+	width:700px;
+	margin: 0 auto;
+	background-color: #b53AD4;
+	color:#58026D;
+	font-family: sans-serif;
+}
+
+h1, h2{
+	margin: 20px 20px 0 20px;
+	color:white;
+	background-color:inherit;
+}
+p{
+	margin: 0 20px;
+	padding: 10px;
+	text-align:justify;
+	background-color:white;
+	color:inherit;
+}
+
+div{
+	width:48%;
+	float: left;
+}
+
+
+

@@ -1,0 +1,255 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<!-- Nick Meek, 2012 -->
+<html>
+	<head>
+		<title>All About CSS3 - According to Wikipedia</title>
+		<meta http-equiv="content-type" content="text/html; charset=utf-8">
+		<link rel="stylesheet" type="text/css" href="style.css">
+	</head>
+	<body>
+    <!-- All content in this page lifted directly from Wikipedia.com -->
+		<div id="header">
+			<header><h1>A Short Guide to CSS</h1></header>
+			<nav>
+				<ul>
+					<li><a href="html5.html">HTML5</a></li>
+					<li>CSS 3</li>
+				</ul>
+			</nav>
+		</div>
+		<section>
+		<h2>Cascading Style Sheets</h2>
+		<p>From <a href="http://wikipedia.org">Wikipedia</a>, the free encyclopedia</p></section>
+		<aside><!--<div id="rightCol">--> <!--The right-hand column.*/-->
+			<section class="rightColItem">  <!--Each self-contained section is in a rightColItem div-->
+				<header class="rightColHeader"> <!--To keep header items (if any) together.-->
+					<h2>Cascading Style Sheets</h2>
+				</header>
+				<dl>
+					<dt>Filename extension</dt>
+					<dd>.css</dd>
+					<dt>Internet media type</dt>
+					<dd>text/css</dd>
+					<dt>Developed by</dt>
+					<dd>World Wide Web Consortium</dd>
+					<dt>Initial release</dt>
+					<dd>17 December 1996; 14 years ago</dd>
+					<dt>Type of format</dt>
+					<dd>Style sheet language</dd>
+					<dt>Standard(s)</dt>
+					<dd>Level 1 (Recommendation)</dd>
+					<dd>Level 2 (Recommendation)</dd>
+					<dd>Level 2 Revision 1 (Recommendation)</dd>
+				</dl>
+			</header>
+			
+		</aside>
+		<article>
+			<p>Cascading Style Sheets (CSS) is a style sheet language used to describe the presentation semantics (the look and formatting) of a document written in a markup language. Its most common application is to style web pages written in HTML and XHTML, but the language can also be applied to any kind of XML document, including plain XML, SVG and XUL.
+			</p>
+			<p>CSS is designed primarily to enable the separation of document content (written in HTML or a similar markup language) from document presentation, including elements such as the layout, colors, and fonts.[1] This separation can improve content accessibility, provide more flexibility and control in the specification of presentation characteristics, enable multiple pages to share formatting, and reduce complexity and repetition in the structural content (such as by allowing for tableless web design). CSS can also allow the same markup page to be presented in different styles for different rendering methods, such as on-screen, in print, by voice (when read out by a speech-based browser or screen reader) and on Braille-based, tactile devices. While the author of a document typically links that document to a CSS style sheet, readers can use a different style sheet, perhaps one on their own computer, to override the one the author has specified.
+			</p>
+			<p>CSS specifies a priority scheme to determine which style rules apply if more than one rule matches against a particular element. In this so-called cascade, priorities or weights are calculated and assigned to rules, so that the results are predictable.
+				The CSS specifications are maintained by the World Wide Web Consortium (W3C). Internet media type (MIME type) text/css is registered for use with CSS by RFC 2318 (March 1998).
+			</p>
+			<div id="contents">
+				<section>
+					<h2>Contents</h2>
+					<ol>
+						<li>Syntax
+							<ol>
+								<li>Use</li>
+								<li>Sources</li>
+							</ol>
+						</li>
+						<li>History
+						<ol>
+							<li>Difficulty with adoption</li>
+							<li>Variations
+								<ol>
+									<li>CSS1</li>
+									<li>CSS2</li>
+									<li>CSS 2.1</li>
+									<li>CSS3</li>
+								</ol>
+							</li>
+						</ol>
+						<li>Browser support</li>
+						<li>Limitations</li>
+						<li>Advantages</li>
+						<li>CSS frameworks</li>
+						<li>Positioning
+							<ol>
+								<li>Position: top, bottom, left, and right</li>
+								<li>Float and clear</li>
+							</ol>
+						</li>
+						<li>References</li>
+						<li>Further reading</li>
+						<li>External links</li>
+					</ol>
+			</div>
+			</section>
+			<section>
+				<h2>Syntax</h2>
+				<p>CSS has a simple syntax and uses a number of English keywords to specify the names of various style properties.
+				</p>
+				<p>A style sheet consists of a list of rules. Each rule or rule-set consists of one or more selectors and a declaration block. A declaration-block consists of a list of declarations in braces. Each declaration itself consists of a property, a colon (:), a value. If there are multiple declarations in a block, a semi-colon (;) must be inserted to separate each declaration.
+				</p>
+				<p>In CSS, selectors are used to declare which of the markup elements a style applies to, a kind of match expression. Selectors may apply to all elements of a specific type, or only those elements that match a certain attribute; elements may be matched depending on how they are placed relative to each other in the markup code, or on how they are nested within the Document Object Model.
+				</p>
+				<p>Pseudo-classes are another form of specification used in CSS to identify markup elements, and in some cases, specific user actions to which a particular declaration block applies. An often-used example is the :hover pseudo-class that applies a style only when the user 'points to' the visible element, usually by holding the mouse cursor over it. It is appended to a selector as in a:hover or #elementid:hover. Other pseudo-classes and pseudo-elements are, for example, :first-line, :visited or :before. A special pseudo-class is :lang(c), "c".
+				</p>
+				<p>A pseudo-class selects entire elements, such as :link or :visited, whereas a pseudo-element makes a selection that may consist of partial elements, such as :first-line or :first-letter.
+				</p>
+				<p>Selectors may be combined in other ways too, especially in CSS 2.1, to achieve greater specificity and flexibility.
+				</p>
+				<p>Here is an example summing up the rules above:</p>
+				<p>selector [, selector2, ...] [:pseudo-class] {</p>
+				<p>property: value;</p>
+				<p>[property2: value2;</p>
+				<p> …]</p>
+				<p>}</p>
+				<p>/* comment */</p>
+			</section>
+			<section>
+				<h2>Use</h2>
+				<p>Prior to CSS, nearly all of the presentational attributes of HTML documents were contained within the HTML markup; all font colors, background styles, element alignments, borders and sizes had to be explicitly described, often repeatedly, within the HTML. CSS allows authors to move much of that information to a separate style sheet resulting in considerably simpler HTML markup.
+				</p>
+				<p>Headings (h1 elements), sub-headings (h2), sub-sub-headings (h3), etc., are defined structurally using HTML. In print and on the screen, choice of font, size, color and emphasis for these elements is presentational.
+				</p>
+				<p>Prior to CSS, document authors who wanted to assign such typographic characteristics to, say, all h2 headings had to use the HTML font and other presentational elements for each occurrence of that heading type. The additional presentational markup in the HTML made documents more complex, and generally more difficult to maintain. In CSS, presentation is separated from structure. In print, CSS can define color, font, text alignment, size, borders, spacing, layout and many other typographic characteristics. It can do so independently for on-screen and printed views. CSS also defines non-visual styles such as the speed and emphasis with which text is read out by aural text readers. The W3C now considers the advantages of CSS for defining all aspects of the presentation of HTML pages to be superior to other methods. It has therefore deprecated the use of all the original presentational HTML markup.
+				</p>
+				<p>CSS files are inserted into HTML documents using the following syntax:
+					&lt;link rel="stylesheet" href="http://example.com/css/style.css" type="text/css" /&gt;
+				</p>
+			</section>
+			<section>
+				<h2>Sources</h2>
+				<p>CSS information can be provided by various sources. CSS style information can be either attached as a separate document or embedded in the HTML document. Multiple style sheets can be imported. Different styles can be applied depending on the output device being used; for example, the screen version can be quite different from the printed version, so that authors can tailor the presentation appropriately for each medium.
+				</p>
+				<p>Priority scheme for CSS sources (from highest to lowest priority):</p>
+				<ul>
+					<li>Author styles (provided by the web page author), in the form of:
+						<ul>
+							<li>Inline styles, inside the HTML document, style information on a single element, specified using the "style" attribute
+							</li>
+							<li>Embedded style, blocks of CSS information inside the HTML itself</li>
+							<li>External style sheets, i.e., a separate CSS file referenced from the document</li>
+						</ul>
+					</li>
+					<li>User style:
+						<ul>
+							<li>A local CSS file the user specifies with a browser option, which acts as an override applied to all documents
+							</li>
+						</ul>
+					</li>
+					<li>User agent style
+						<ul>
+							<li>Default styles applied by the user agent, i.e., the browser's default settings for element presentation
+							</li>
+						</ul>
+					</li>
+				</ul>
+				<p>The style sheet with the highest priority controls the content display. Declarations not set in the highest priority source are passed on by a source of lower priority such as the user agent style. This process is called cascading.
+				</p>
+				<p>One of the goals of CSS is also to allow users greater control over presentation. Someone who finds red italic headings difficult to read may apply a different style sheet. Depending on their browser and the web site, a user may choose from various style sheets provided by the designers, may remove all added style and view the site using the browser's default styling, or may override just the red italic heading style without altering other attributes.
+				</p>
+				<p>File highlightheaders.css containing:</p>
+				<p>h1 { color: white; background-color: orange !important; }</p>
+				<p>h2 { color: white; background-color: green !important; }</p>
+			</section>
+			<section>
+				<h2>History</h2>
+				<p>Style sheets have existed in one form or another since the beginnings of SGML in the 1970s. Cascading Style Sheets were developed as a means for creating a consistent approach to providing style information for web documents.
+				<p>
+				<p>As HTML grew, it came to encompass a wider variety of stylistic capabilities to meet the demands of web developers. This evolution gave the designer more control over site appearance but at the cost of HTML becoming more complex to write and maintain. Variations in web browser implementations, such as ViolaWWW and WorldWideWeb[4], made consistent site appearance difficult, and users had less control over how web content was displayed. Robert Cailliau wanted to separate the structure from the presentation.[4] The ideal way would be to give the user different options and transferring three different kinds of style sheets: one for printing, one for the presentation on the screen and one for the editor feature.
+				<p>
+				<p>To improve web presentation capabilities, nine different style sheet languages were proposed to the World Wide Web Consortium's (W3C) www-style mailing list. Of the nine proposals, two were chosen as the foundation for what became CSS: Cascading HTML Style Sheets (CHSS) and Stream-based Style Sheet Proposal (SSP). CHSS, a language that has some resemblance to today's CSS, was proposed by Håkon Wium Lie in October 1994. Bert Bos was working on a browser called Argo, which used its own style sheet language called SSP.[5] Lie and Yves Lafon joined Dave Raggett to expand the Arena browser for supporting CSS as a testbed application for the W3C.[6][7][8] Lie and Bos worked together to develop the CSS standard (the 'H' was removed from the name because these style sheets could also be applied to other markup languages besides HTML).
+				<p>
+				<p>Unlike existing style languages like DSSSL and FOSI, CSS allowed a document's style to be influenced by multiple style sheets. One style sheet could inherit or "cascade" from another, permitting a mixture of stylistic preferences controlled equally by the site designer and user.
+				<p>
+				<p>Lie's proposal was presented at the "Mosaic and the Web" conference (later called WWW2) in Chicago, Illinois in 1994, and again with Bert Bos in 1995.[9] Around this time the W3C was already being established, and took an interest in the development of CSS. It organized a workshop toward that end chaired by Steven Pemberton. This resulted in W3C adding work on CSS to the deliverables of the HTML editorial review board (ERB). Lie and Bos were the primary technical staff on this aspect of the project, with additional members, including Thomas Reardon of Microsoft, participating as well. In August 1996 Netscape Communication Corporation presented an alternative style sheet language called JavaScript Style Sheets (JSSS).[9] The spec was never finished and is deprecated.[10] By the end of 1996, CSS was ready to become official, and the CSS level 1 Recommendation was published in December.
+				<p>
+				<p>Development of HTML, CSS, and the DOM had all been taking place in one group, the HTML Editorial Review Board (ERB). Early in 1997, the ERB was split into three working groups: HTML Working group, chaired by Dan Connolly of W3C; DOM Working group, chaired by Lauren Wood of SoftQuad; and CSS Working group, chaired by Chris Lilley of W3C.
+				The CSS Working Group began tackling issues that had not been addressed with CSS level 1, resulting in the creation of CSS level 2 on November 4, 1997. It was published as a W3C Recommendation on May 12, 1998. CSS level 3, which was started in 1998, is still under development as of 2009.
+				<p>
+				<p>In 2005 the CSS Working Groups decided to enforce the requirements for standards more strictly. This meant that already published standards like CSS 2.1, CSS 3 Selectors and CSS 3 Text were pulled back from Candidate Recommendation to Working Draft level.
+				<p>
+			</section>
+			<section>
+				<h2>Difficulty with adoption</h2>
+				<p>Although the CSS 1 specification was completed in 1996 and Microsoft's Internet Explorer 3[9] was released in that year featuring some limited support for CSS, it was more than three years before any web browser achieved near-full implementation of the specification. Internet Explorer 5.0 for the Macintosh, shipped in March 2000, was the first browser to have full (better than 99 percent) CSS 1 support,[11] surpassing Opera, which had been the leader since its introduction of CSS support 15 months earlier. Other browsers followed soon afterwards, and many of them additionally implemented parts of CSS 2. As of August 2010, no (finished) browser has fully implemented CSS 2, with implementation levels varying (see Comparison of layout engines (CSS)).
+				<p>
+				<p>Even though early browsers such as Internet Explorer 3[9] and 4, and Netscape 4.x had support for CSS, it was typically incomplete and afflicted with serious bugs. This was a serious obstacle for the adoption of CSS.
+				<p>
+				<p>When later 'version 5' browsers began to offer a fairly full implementation of CSS, they were still incorrect in certain areas and were fraught with inconsistencies, bugs and other quirks. The proliferation of such CSS-related inconsistencies and even the variation in feature support has made it difficult for designers to achieve a consistent appearance across platforms. Some authors resorted to workarounds such as CSS hacks and CSS filters to obtain consistent results across web browsers and platforms.
+				<p>
+				<p>Problems with browsers' patchy adoption of CSS along with errata in the original specification led the W3C to revise the CSS 2 standard into CSS 2.1, which moved nearer to a working snapshot of current CSS support in HTML browsers. Some CSS 2 properties that no browser successfully implemented were dropped, and in a few cases, defined behaviors were changed to bring the standard into line with the predominant existing implementations. CSS 2.1 became a Candidate Recommendation on February 25, 2004, but CSS 2.1 was pulled back to Working Draft status on June 13, 2005,[12] and only returned to Candidate Recommendation status on July 19, 2007.
+				<p>
+				<p>In the past, some web servers were configured to serve all documents with the filename extension .css[14] as mime type application/x-pointplus[15] rather than text/css. At the time, the Net-Scene company was selling PointPlus Maker to convert PowerPoint files into Compact Slide Show files (using a .css extension).
+				<p>
+			</section>
+			<section>
+				<h2>Variations</h2>
+				<p>CSS has various levels and profiles. Each level of CSS builds upon the last, typically adding new features and typically denoted as CSS1, CSS2, CSS3, and CSS4. Profiles are typically a subset of one or more levels of CSS built for a particular device or user interface. Currently there are profiles for mobile devices, printers, and television sets. Profiles should not be confused with media types, which were added in CSS2.
+				<p>
+			</section>
+			<section>
+				<h2>CSS1</h2>
+				<p>The first CSS specification to become an official W3C Recommendation is CSS level 1, published in December 1996.[17] Among its capabilities are support for
+				<p>
+				<ul>
+					<li>Font properties such as typeface and emphasis
+					<li>
+					<li>Color of text, backgrounds, and other elements
+					<li>
+					<li>Text attributes such as spacing between words, letters, and lines of text
+					<li>
+					<li>Alignment of text, images, tables and other elements
+					<li>
+					<li>Margin, border, padding, and positioning for most elements
+					<li>
+					<li>Unique identification and generic classification of groups of attributes
+					<li>
+				</ul>
+				<p>The W3C no longer maintains the CSS1 Recommendation.</p>
+			</section>
+			<section>
+				<h2>CSS2</h2>
+				<p>CSS level 2 specification was developed by the W3C and published as a Recommendation in May 1998. A superset of CSS1, CSS2 includes a number of new capabilities like absolute, relative, and fixed positioning of elements and z-index, the concept of media types, support for aural style sheets and bidirectional text, and new font properties such as shadows.
+				</p>
+				<p>The W3C no longer maintains the CSS2 recommendation.</p>
+			</section>
+			<section><h2>CSS 2.1</h2>
+				<p>CSS level 2 revision 1, often referred to as "CSS 2.1", fixes errors in CSS2, removes poorly-supported or not fully interoperable features and adds already-implemented browser extensions to the specification. In order to comply with the W3C Process for standardizing technical specifications, CSS 2.1 went back and forth between Working Draft status and Candidate Recommendation status for many years. CSS 2.1 first became a Candidate Recommendation on February 25, 2004, but it was reverted to a Working Draft on June 13, 2005 for further review. It returned to Candidate Recommendation on 19 July 2007 and then updated twice in 2009. However, since changes and clarifications were made, it again went back to Last Call Working Draft on 7 December 2010.
+				</p>
+				<p>CSS 2.1 went to Proposed Recommendation on 12 April 2011.[20] After being reviewed by the W3C Advisory Committee, it was finally published as a W3C Recommendation on 7 June 2011.
+				</p>
+			</section>
+			<section>
+				<h2>CSS3</h2>
+				<p>Unlike CSS2, a large single specification defining various features, CSS3 is divided into several separate documents called "modules". Each module adds new capability or extends features defined in CSS2, over preserving backward compatibility. Work on CSS level 3 started around the time of publication of the original CSS2 recommendation. The earliest CSS3 drafts were published in June 1999.
+				</p>
+				<p>Due to the modularization, different modules have different stability and are in different status.[23] As of November 2011, there are over fifty CSS modules published from the CSS Working Group.[22] Three of them―Selectors, Namespaces and Color― became W3C Recommendation in 2011.
+				</p>
+				<p>Some modules such as Backgrounds and Colors, Media Queries, Multi-column Layout are in the Candidate Recommendation status and considered moderately stable. At this stage, implementations are advised to drop vendor prefixes.
+				</p>
+			</section>
+			<section>
+				<h2>Browser support</h2>
+				<p>Because not all browsers correctly parse CSS code, developed coding techniques known as CSS hacks can either filter specific browsers or target specific browsers (generally both are known as CSS filters). The former can be defined as CSS filtering hacks and the latter can be defined as CSS targeting hacks and both of which can be used to hide or show parts of the CSS to different browsers. This is achieved either by exploiting CSS-handling quirks or bugs in the browser, or by taking advantage of lack of support for parts of the CSS specifications.[25] Using CSS filters, some designers have gone as far as delivering different CSS to certain browsers to ensure designs render as expected. Because very early web browsers were either completely incapable of handling CSS, or render CSS very poorly, designers today often routinely use CSS filters that completely prevent these browsers from accessing any of the CSS. Internet Explorer support for CSS began with IE 3.0 and increased progressively with each version. By 2008, the first Beta of Internet Explorer 8 offered support for CSS 2.1 in its best web standards mode.
+				</p>
+				<p>An example of a well-known CSS browser bug is the Internet Explorer box model bug, where box widths are interpreted incorrectly in several versions of the browser, resulting in blocks that are too narrow when viewed in Internet Explorer, but correct in standards-compliant browsers. The bug can be avoided in Internet Explorer 6 by using the correct doctype in (X)HTML documents. CSS hacks and CSS filters are used to compensate for bugs such as this, just one of hundreds of CSS bugs that have been documented in various versions of Netscape, Mozilla Firefox, Opera, and Internet Explorer (including Internet Explorer 7).
+				</p>
+				<p>Even when the availability of CSS-capable browsers made CSS a viable technology, the adoption of CSS was still held back by designers' struggles with browsers' incorrect CSS implementation and patchy CSS support. Even today, these problems continue to make the business of CSS design more complex and costly than it was intended to be, and cross-browser testing remains a necessity. Other reasons for the continuing non-adoption of CSS are: its perceived complexity, authors' lack of familiarity with CSS syntax and required techniques, poor support from authoring tools, the risks posed by inconsistency between browsers and the increased costs of testing.
+				</p>
+				<p>Currently there is strong competition between Mozilla's Gecko layout engine used in Firefox, the WebKit layout engine used in Apple Safari and Google Chrome, the similar KHTML engine used in KDE's Konqueror browser, and Opera's Presto layout engine—each of them is leading in different aspects of CSS. As of August 2009, Internet Explorer 8, Firefox 2 and 3 have reasonably complete levels of implementation of CSS 2.1.
+				</p>
+		</article>
+		<footer>
+			<p>Page prepared for COMP112 exercise by Nick Meek in January 2012</p>
+			<p>All content from <a href="http://www.wikipedia.org">Wikipedia</a></p>
+		</footer>
+	</body>
+</html>
